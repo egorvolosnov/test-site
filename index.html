@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинг - Оформление заявки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Оформите заявку</h1>
+    <form id="orderForm">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" required placeholder="79001234567">
+
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </div>
+  <div class="background">
+    <span class="thanks">СПАСИБО ЗА ЗАКАЗ!</span>
+  </div>
+
+  <script>
+    const form = document.getElementById('orderForm');
+    const thanks = document.querySelector("background") 
+    const apiUrl = 'https://order.drcash.sh/v1/order';
+    const headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer RLPUUQAMIKSAB2PSGUECA'
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+
+      if (!name || !phone) {
+        alert('Заполните все поля.');
+        return;
+      }
+
+      const storedOrder = localStorage.getItem(`order_${phone}`);
+      if (storedOrder) {
+        alert('Заявка с этим номером телефона уже была отправлена.');
+        return;
+      }
+
+      const data = {
+        stream_code: 'vv4uf',
+        client: {
+          phone: phone,
+          name: name
+        }
+      };
+
+      try {
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          // Сохранение заявки в localStorage
+          localStorage.setItem(`order_${phone}`, JSON.stringify(data));
+          form.querySelectorAll('input, button').forEach(input => input.disabled = true);
+          thanks.style.display = "flex";
+        } else {
+          alert('Ошибка отправки заявки. Попробуйте снова.');
+        }
+      } catch (error) {
+        console.error('Ошибка:', error);
+        alert('Произошла ошибка при отправке заявки.');
+      }
+    });
+  </script>
+</body>
+</html>
+
