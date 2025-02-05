@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Technologies</title>
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="header-mobile flex-box-column space-between">
+                <div class="header-mobile-menu flex-box-column">
+                    <div class="header-mobile-menu-item flex-box-row">
+                        <span>О нас</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <ul class="submenu-mobile">
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                    </ul>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Услуги</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Врачи</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Акции</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Диагностика</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Анализы</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Пациентам</span>
+                    </a>
+                    <a href="#" class="header-mobile-menu-item">
+                        <span>Контакты</span>
+                    </a>
+                </div>
+                <div class="header-mobile-bottom flex-box-column">
+                    <div class="header-mobile-phone flex-box-column">
+                        <a href="tel:+79112100287" class="blue-color">
+                            +7 911 210 02 87
+                        </a>
+                        <span>Ежедневно 8:00 - 20:00</span>
+                    </div>
+                    <div class="header-mobile-buttons flex-box-row space-between">
+                        <div class="header-user">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13C14.1217 13 16.1566 13.8429 17.6569 15.3431C19.1571 16.8434 20 18.8783 20 21M12 13C9.87827 13 7.84344 13.8429 6.34315 15.3431C4.84285 16.8434 4 18.8783 4 21"
+                                    stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="header-form-button">
+                            <span class="white-color">Записаться</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+
+                <div class="header flex-box-row space-between">
+                    <div class="burger-menu" id="burger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="index.html">
+                        <svg class="logo" width="149" height="55" viewBox="0 0 149 55" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2004_456)">
+                                <path
+                                    d="M81.7044 30.4732V34.7758H88.3986V36.3125H79.7118V30.4732H81.7044ZM79.7118 27.2974V22.0727H88.0916V23.6094H81.7044V27.2974H79.7118Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M91.0045 22.2774C92.2311 22.1238 93.6616 21.9701 95.2456 21.9701C98.1067 21.9701 100.151 22.5847 101.53 23.7628C102.91 24.941 103.728 26.5801 103.728 28.8851C103.728 31.2413 102.961 33.1366 101.479 34.4171C100.049 35.7489 97.6469 36.466 94.6323 36.466C93.2018 36.466 92.0264 36.4148 91.0045 36.3123V22.2774ZM93.0483 34.8781C93.5593 34.9806 94.2749 34.9806 95.0921 34.9806C99.3844 34.9806 101.684 32.778 101.684 28.9363C101.684 25.5557 99.6401 23.4043 95.3991 23.4043C94.3765 23.4043 93.5593 23.5067 93.0483 23.6092V34.8781Z"
+                                    fill="#3E989A" />
+                                <path d="M108.326 22.0727V36.3637H106.333V22.0727H108.326Z" fill="#3E989A" />
+                                <path
+                                    d="M128.766 31.8562L127.182 36.3638H125.138L130.401 22.0728H132.802L138.066 36.3638H135.92L134.285 31.8562H128.766ZM133.875 30.422L132.343 26.3242C131.985 25.4022 131.781 24.5314 131.525 23.7119H131.474C131.218 24.5826 131.014 25.4534 130.707 26.273L129.175 30.422H133.875Z"
+                                    fill="#3E989A" />
+                                <path d="M140.364 22.0727H142.358V34.8271H149V36.3637H140.364V22.0727Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M12.7744 36.0051H6.59156V29.3974H0V23.1996H6.59156V16.5919H12.7744V23.1996H19.3659V29.3974H12.7744V36.0051Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M37.6077 28.4753C37.6077 27.9632 37.25 27.7071 36.8924 27.7071C36.6369 27.7071 35.7682 27.6558 35.7682 27.6558C33.8776 27.246 34.2353 24.019 34.2353 24.019C36.0237 13.0062 32.0381 1.73734 21.9719 0.661674C20.1324 0.508007 14.2562 0.303118 10.5772 6.29613H10.5261C10.3217 6.24491 10.0151 6.29613 9.70855 6.44979L7.9712 7.83276C7.66463 8.14015 7.66463 8.5499 7.9712 8.90844L9.04425 9.98412C9.40192 10.2402 9.86184 10.2914 10.1173 9.98412L11.2926 7.93527C11.4969 7.47423 11.4969 7.06447 11.2926 6.85957L11.2415 6.80835C14.1029 3.0179 18.855 1.37879 21.512 1.78856C35.8193 3.4789 34.6951 21.6116 31.9359 28.1168C29.0745 36.6197 16.6578 48.0423 12.8766 49.9375L12.8255 49.9887L12.7744 49.9375C12.57 49.8351 12.2634 49.8351 11.9057 49.9375L9.70855 50.7571C9.35082 50.962 9.35082 51.423 9.55527 51.8327L10.4239 53.062C10.7305 53.4206 11.1393 53.4719 11.4969 53.2158L13.132 51.6278C13.3876 51.3205 13.4898 51.0644 13.4387 50.8083V50.7571C22.3807 44.9177 27.6948 37.9003 30.8628 32.7781C30.8628 32.7781 32.4468 30.5243 35.9215 30.5243C35.9215 30.5243 36.688 30.5243 37.0456 30.473C37.4033 30.4218 37.761 30.0121 37.761 29.6022V28.4753H37.6077Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M37.1474 29.8071H45.1185L50.0239 48.9642L59.0171 13.9282L66.7836 38.9247L72.0466 22.9433L74.6019 29.6534L86.2521 29.7046V28.1167H76.2883L71.8937 15.3624L66.8348 30.9852L59.0171 5.7326L50.0239 41.0248L46.8047 28.2704H37.1474V29.8071Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M15.8402 36.0051H9.65736V29.3974H3.0658V23.1996H9.65736V16.5919H15.8402V23.1996H22.4317V29.3974H15.8402V36.0051Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M114.304 35.8004C115.48 36.62 116.961 37.081 118.494 37.081C119.567 37.081 120.947 36.7225 121.56 36.4151C122.173 36.1078 123.042 35.5956 123.042 35.5956L123.093 33.4954C122.684 34.0077 122.173 34.4174 121.611 34.776C120.743 35.2882 119.669 35.5956 118.545 35.5956C115.224 35.5956 112.516 32.8808 112.516 29.5513C112.516 26.2219 115.224 23.5071 118.545 23.5071C118.75 23.5071 118.954 23.5071 119.159 23.5583H119.261L121.049 26.3756C121.151 26.5804 121.458 26.6317 121.611 26.5292L121.969 26.2731L122.735 27.4C122.837 27.5537 122.991 27.5537 123.144 27.5025L123.604 27.1951C123.757 27.0926 123.757 26.939 123.706 26.7853L122.991 25.6072L123.348 25.3511C123.553 25.2487 123.604 24.9413 123.502 24.7876L119.721 18.8459C119.516 18.5386 119.056 18.4361 118.75 18.641L118.545 18.2824C118.443 18.0775 118.137 18.0263 117.932 18.1287L117.421 18.4361C117.217 18.5386 117.166 18.8459 117.268 19.0508L117.523 19.4093C117.217 19.6142 117.115 20.0752 117.319 20.3825L118.341 21.9704H118.239C114.253 22.1753 111.136 25.4535 111.136 29.5001C111.136 31.7027 112.056 33.6491 113.537 35.0321L114.304 35.8004Z"
+                                    fill="#3E989A" />
+                                <path
+                                    d="M119.464 20.4335L122.531 25.2997C122.582 25.3509 122.683 25.4021 122.735 25.3509L122.888 25.2484C122.939 25.1972 122.99 25.0948 122.939 25.0436L119.874 20.1774L119.464 20.4335Z"
+                                    fill="white" />
+                                <path
+                                    d="M119.568 19.6655L119.312 19.2557C119.261 19.2045 119.159 19.1533 119.108 19.2045L118.954 19.3069C118.903 19.3582 118.853 19.4606 118.903 19.5119L119.159 19.9216L119.568 19.6655Z"
+                                    fill="white" />
+                                <path
+                                    d="M113.538 29.5511C113.538 32.3683 115.785 34.6221 118.596 34.6221C120.64 34.6221 122.377 33.444 123.194 31.7024C123.246 31.6512 123.246 31.6 123.297 31.5488C118.341 32.9318 117.983 28.2705 113.69 28.3729C113.589 28.6803 113.538 29.1413 113.538 29.5511ZM116.858 32.8805C116.858 32.3683 117.268 32.0097 117.727 32.0097C118.238 32.0097 118.596 32.4195 118.596 32.8805C118.596 33.3927 118.187 33.7513 117.727 33.7513C117.268 33.7513 116.858 33.3927 116.858 32.8805ZM114.406 29.9096C114.406 29.5511 114.662 29.295 115.019 29.295C115.377 29.295 115.632 29.5511 115.632 29.9096C115.632 30.2682 115.377 30.5243 115.019 30.5243C114.662 30.5243 114.406 30.2682 114.406 29.9096Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M121.561 30.8316C121.928 30.8316 122.225 30.5334 122.225 30.1657C122.225 29.7979 121.928 29.4998 121.561 29.4998C121.194 29.4998 120.897 29.7979 120.897 30.1657C120.897 30.5334 121.194 30.8316 121.561 30.8316Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M118.904 29.0902C119.101 29.0902 119.261 28.9297 119.261 28.7317C119.261 28.5337 119.101 28.3732 118.904 28.3732C118.706 28.3732 118.546 28.5337 118.546 28.7317C118.546 28.9297 118.706 29.0902 118.904 29.0902Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M118.597 26.6316C118.822 26.6316 119.005 26.4481 119.005 26.2218C119.005 25.9955 118.822 25.8121 118.597 25.8121C118.371 25.8121 118.188 25.9955 118.188 26.2218C118.188 26.4481 118.371 26.6316 118.597 26.6316Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M116.195 27.5536C116.562 27.5536 116.859 27.2554 116.859 26.8877C116.859 26.52 116.562 26.2218 116.195 26.2218C115.828 26.2218 115.531 26.52 115.531 26.8877C115.531 27.2554 115.828 27.5536 116.195 27.5536Z"
+                                    fill="#283D71" />
+                                <path
+                                    d="M69.5939 40.4611H67.3966V39.744H72.7107V40.4611H70.5135V46.3005H69.5939V40.4611Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M78.3313 43.2273H75.5207V45.5836H78.6376V46.3007H74.6012V39.7443H78.4841V40.4613H75.5207V42.5615H78.3313V43.2273Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M85.9453 46.0956C85.5879 46.2493 84.9235 46.4029 84.055 46.4029C82.0112 46.4029 80.4784 45.2248 80.4784 43.0735C80.4784 41.0246 82.0112 39.6416 84.2597 39.6416C85.1792 39.6416 85.7414 39.7953 85.9453 39.9489L85.7414 40.6661C85.3832 40.5124 84.8723 40.4099 84.3102 40.4099C82.6245 40.4099 81.5003 41.3831 81.5003 43.1247C81.5003 44.7126 82.5222 45.7883 84.2597 45.7883C84.8211 45.7883 85.3832 45.6859 85.7925 45.5321L85.9453 46.0956Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M89.1129 39.7443V42.5103H92.5872V39.7443H93.5068V46.3007H92.5872V43.2273H89.1129V46.3007H88.1927V39.7443H89.1129Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M96.2158 46.3007V39.7443H97.2377L99.5373 43.0737C100.048 43.842 100.508 44.5591 100.815 45.225C100.713 44.3542 100.713 43.5347 100.713 42.5103V39.7443H101.581V46.3007H100.662L98.3619 42.9712C97.851 42.2541 97.3912 41.4858 97.0337 40.7687H96.9826C97.0337 41.5882 97.0337 42.4078 97.0337 43.4834V46.3007H96.2158Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M110.523 42.971C110.523 45.2248 109.041 46.4541 107.201 46.4541C105.311 46.4541 103.982 45.1223 103.982 43.1246C103.982 41.0246 105.413 39.6928 107.304 39.6928C109.246 39.6416 110.523 41.0246 110.523 42.971ZM104.902 43.0734C104.902 44.4564 105.72 45.737 107.201 45.737C108.684 45.737 109.501 44.5076 109.501 43.0222C109.501 41.7416 108.735 40.3586 107.201 40.3586C105.668 40.3074 104.902 41.6392 104.902 43.0734Z"
+                                    fill="#2D2D2D" />
+                                <path d="M112.771 39.744H113.691V45.5833H116.757V46.3005H112.771V39.744Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M124.626 42.971C124.626 45.2248 123.144 46.4541 121.305 46.4541C119.414 46.4541 118.085 45.1223 118.085 43.1246C118.085 41.0246 119.516 39.6928 121.407 39.6928C123.348 39.6416 124.626 41.0246 124.626 42.971ZM119.056 43.0734C119.056 44.4564 119.874 45.737 121.356 45.737C122.837 45.737 123.655 44.5076 123.655 43.0222C123.655 41.7416 122.889 40.3586 121.356 40.3586C119.823 40.3074 119.056 41.6392 119.056 43.0734Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M132.392 46.0445C131.984 46.1982 131.166 46.403 130.195 46.403C129.122 46.403 128.203 46.1469 127.487 45.5322C126.874 44.9688 126.465 44.098 126.465 43.0736C126.465 41.1271 127.947 39.6929 130.349 39.6929C131.166 39.6929 131.83 39.8466 132.137 40.0003L131.933 40.7173C131.524 40.5637 131.064 40.41 130.349 40.41C128.611 40.41 127.436 41.3832 127.436 43.0736C127.436 44.7639 128.56 45.7371 130.195 45.7371C130.808 45.7371 131.217 45.6347 131.422 45.5835V43.637H129.94V42.9711H132.29V46.0445H132.392Z"
+                                    fill="#2D2D2D" />
+                                <path d="M135.816 39.744V46.3005H134.897V39.744H135.816Z" fill="#2D2D2D" />
+                                <path
+                                    d="M142.255 43.2271H139.444V45.5833H142.561V46.3005H138.524V39.744H142.407V40.4611H139.444V42.5612H142.255V43.2271Z"
+                                    fill="#2D2D2D" />
+                                <path
+                                    d="M144.708 45.276C145.116 45.5321 145.73 45.6859 146.394 45.6859C147.365 45.6859 147.876 45.2248 147.876 44.559C147.876 43.9443 147.467 43.5857 146.496 43.2784C145.321 42.9198 144.605 42.3564 144.605 41.4344C144.605 40.4099 145.526 39.6416 146.956 39.6416C147.672 39.6416 148.234 39.7953 148.54 39.9489L148.284 40.6661C148.029 40.5636 147.569 40.3587 146.905 40.3587C145.934 40.3587 145.526 40.8709 145.526 41.3319C145.526 41.9466 145.985 42.2539 146.956 42.6125C148.183 43.0222 148.796 43.5857 148.796 44.559C148.796 45.5833 147.978 46.4542 146.292 46.4542C145.577 46.4542 144.861 46.2493 144.452 46.0444L144.708 45.276Z"
+                                    fill="#2D2D2D" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2004_456">
+                                    <rect width="149" height="53.7811" fill="white" transform="translate(0 0.609497)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="header-menu flex-box-row space-between">
+                        <div href="#" class="header-menu-item flex-box-row">
+                            <span>О нас</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#222222" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <ul class="submenu">
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="header-menu-item">
+                            <span>Услуги</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Врачи</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Акции</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Диагностика</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Анализы</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Пациентам</span>
+                        </a>
+                        <a href="#" class="header-menu-item">
+                            <span>Контакты</span>
+                        </a>
+                        <svg class="search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 21.0002L16.7 16.7002M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="header-right flex-box-row">
+                        <div class="header-phone flex-box-column">
+                            <a href="tel:+79112100287" class="blue-color">
+                                +7 911 210 02 87
+                            </a>
+                            <span>Ежедневно 8:00 - 20:00</span>
+                        </div>
+                        <a href="tel:+79112100287" class="header-phone-mobile">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.0001 16.92V19.92C22.0012 20.1985 21.9441 20.4741 21.8326 20.7293C21.721 20.9845 21.5574 21.2136 21.3521 21.4018C21.1469 21.5901 20.9046 21.7335 20.6408 21.8227C20.377 21.9119 20.0974 21.945 19.8201 21.92C16.7429 21.5856 13.7871 20.5341 11.1901 18.85C8.77388 17.3146 6.72539 15.2661 5.19006 12.85C3.50003 10.2412 2.4483 7.27097 2.12006 4.17997C2.09507 3.90344 2.12793 3.62474 2.21656 3.3616C2.30518 3.09846 2.44763 2.85666 2.63482 2.6516C2.82202 2.44653 3.04986 2.28268 3.30385 2.1705C3.55783 2.05831 3.8324 2.00024 4.11006 1.99997H7.11006C7.59536 1.9952 8.06585 2.16705 8.43382 2.48351C8.80179 2.79996 9.04213 3.23942 9.11005 3.71997C9.23668 4.68004 9.47151 5.6227 9.81006 6.52997C9.9446 6.8879 9.97372 7.27689 9.89396 7.65086C9.81421 8.02482 9.62892 8.36809 9.36005 8.63998L8.09006 9.90997C9.51361 12.4135 11.5865 14.4864 14.0901 15.91L15.3601 14.64C15.6319 14.3711 15.9752 14.1858 16.3492 14.1061C16.7231 14.0263 17.1121 14.0554 17.4701 14.19C18.3773 14.5285 19.32 14.7634 20.2801 14.89C20.7658 14.9585 21.2095 15.2032 21.5266 15.5775C21.8437 15.9518 22.0122 16.4296 22.0001 16.92Z"
+                                    stroke="#F5F6F6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="header-buttons flex-box-row">
+                            <div class="header-user">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13C14.1217 13 16.1566 13.8429 17.6569 15.3431C19.1571 16.8434 20 18.8783 20 21M12 13C9.87827 13 7.84344 13.8429 6.34315 15.3431C4.84285 16.8434 4 18.8783 4 21"
+                                        stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="header-form-button">
+                                <span class="white-color">Записаться</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="wrapper">
+                        <div class="mobile-photo-1"></div>
+                        <div class="top flex-box-column">
+
+                            <div class="top-text flex-box-column">
+                                <span>Ваше здоровье</span>
+                                <span class="blue-color">в надежных руках</span>
+                            </div>
+                            <p>
+                                Создаем комфортные условия для вашего лечения и
+                                восстановления, обеспечивая максимальную
+                                эффективность и удобство на каждом этапе.
+                            </p>
+                            <div class="form-button">
+                                <span class="white-color">Связаться с клиникой</span>
+                            </div>
+                        </div>
+                        <div class="left-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Ирина Васильва</span>
+                                <span><span class="grey-color">Стаж</span> 12 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Виталий Петров</span>
+                                <span><span class="grey-color">Стаж</span> 16 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Анастасия Романова</span>
+                                <span><span class="grey-color">Стаж</span> 8 лет</span>
+                            </div>
+                        </div>
+                        <div class="right-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Мария Пожарская</span>
+                                <span><span class="grey-color">Стаж</span> 10 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Алина Кириллова</span>
+                                <span><span class="grey-color">Стаж</span> 7 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Илья Андреев</span>
+                                <span><span class="grey-color">Стаж</span> 9 лет</span>
+                            </div>
+                        </div>
+                        <div class="bottom flex-box-column">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 36H28M6 44H42M28 44C31.713 44 35.274 42.525 37.8995 39.8995C40.525 37.274 42 33.713 42 30C42 26.287 40.525 22.726 37.8995 20.1005C35.274 17.475 31.713 16 28 16H26M18 28H22M24 12V6C24 5.46957 23.7893 4.96086 23.4142 4.58579C23.0391 4.21071 22.5304 4 22 4H18C17.4696 4 16.9609 4.21071 16.5858 4.58579C16.2107 4.96086 16 5.46957 16 6V12M18 24C16.9391 24 15.9217 23.5786 15.1716 22.8284C14.4214 22.0783 14 21.0609 14 20V12H26V20C26 21.0609 25.5786 22.0783 24.8284 22.8284C24.0783 23.5786 23.0609 24 22 24H18Z"
+                                    stroke="#3E989A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Современное оборудование и передовые технологии</span>
+                        </div>
+                    </div>
+                    <div class="bottom-mobile flex-box-column">
+                        <span>Современное оборудование и передовые технологии</span>
+                        <div class="bottom-mobile-svg"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrapper">
+                        <div class="mobile-photo-1"></div>
+                        <div class="top flex-box-column">
+
+                            <div class="top-text flex-box-column">
+                                <span>Ваше здоровье</span>
+                                <span class="blue-color">в надежных руках</span>
+                            </div>
+                            <p>
+                                Создаем комфортные условия для вашего лечения и
+                                восстановления, обеспечивая максимальную
+                                эффективность и удобство на каждом этапе.
+                            </p>
+                            <div class="form-button">
+                                <span class="white-color">Связаться с клиникой</span>
+                            </div>
+                        </div>
+                        <div class="left-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Ирина Васильва</span>
+                                <span><span class="grey-color">Стаж</span> 12 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Виталий Петров</span>
+                                <span><span class="grey-color">Стаж</span> 16 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Анастасия Романова</span>
+                                <span><span class="grey-color">Стаж</span> 8 лет</span>
+                            </div>
+                        </div>
+                        <div class="right-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Мария Пожарская</span>
+                                <span><span class="grey-color">Стаж</span> 10 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Алина Кириллова</span>
+                                <span><span class="grey-color">Стаж</span> 7 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Илья Андреев</span>
+                                <span><span class="grey-color">Стаж</span> 9 лет</span>
+                            </div>
+                        </div>
+                        <div class="bottom flex-box-column">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 36H28M6 44H42M28 44C31.713 44 35.274 42.525 37.8995 39.8995C40.525 37.274 42 33.713 42 30C42 26.287 40.525 22.726 37.8995 20.1005C35.274 17.475 31.713 16 28 16H26M18 28H22M24 12V6C24 5.46957 23.7893 4.96086 23.4142 4.58579C23.0391 4.21071 22.5304 4 22 4H18C17.4696 4 16.9609 4.21071 16.5858 4.58579C16.2107 4.96086 16 5.46957 16 6V12M18 24C16.9391 24 15.9217 23.5786 15.1716 22.8284C14.4214 22.0783 14 21.0609 14 20V12H26V20C26 21.0609 25.5786 22.0783 24.8284 22.8284C24.0783 23.5786 23.0609 24 22 24H18Z"
+                                    stroke="#3E989A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Современное оборудование и передовые технологии</span>
+                        </div>
+                    </div>
+                    <div class="bottom-mobile flex-box-column">
+                        <span>Современное оборудование и передовые технологии</span>
+                        <div class="bottom-mobile-svg"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrapper">
+                        <div class="mobile-photo-1"></div>
+                        <div class="top flex-box-column">
+
+                            <div class="top-text flex-box-column">
+                                <span>Ваше здоровье</span>
+                                <span class="blue-color">в надежных руках</span>
+                            </div>
+                            <p>
+                                Создаем комфортные условия для вашего лечения и
+                                восстановления, обеспечивая максимальную
+                                эффективность и удобство на каждом этапе.
+                            </p>
+                            <div class="form-button">
+                                <span class="white-color">Связаться с клиникой</span>
+                            </div>
+                        </div>
+                        <div class="left-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Ирина Васильва</span>
+                                <span><span class="grey-color">Стаж</span> 12 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Виталий Петров</span>
+                                <span><span class="grey-color">Стаж</span> 16 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Анастасия Романова</span>
+                                <span><span class="grey-color">Стаж</span> 8 лет</span>
+                            </div>
+                        </div>
+                        <div class="right-photo flex-box-row">
+                            <div class="stazh flex-box-column">
+                                <span>Мария Пожарская</span>
+                                <span><span class="grey-color">Стаж</span> 10 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Алина Кириллова</span>
+                                <span><span class="grey-color">Стаж</span> 7 лет</span>
+                            </div>
+                            <div class="stazh flex-box-column">
+                                <span>Илья Андреев</span>
+                                <span><span class="grey-color">Стаж</span> 9 лет</span>
+                            </div>
+                        </div>
+                        <div class="bottom flex-box-column">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 36H28M6 44H42M28 44C31.713 44 35.274 42.525 37.8995 39.8995C40.525 37.274 42 33.713 42 30C42 26.287 40.525 22.726 37.8995 20.1005C35.274 17.475 31.713 16 28 16H26M18 28H22M24 12V6C24 5.46957 23.7893 4.96086 23.4142 4.58579C23.0391 4.21071 22.5304 4 22 4H18C17.4696 4 16.9609 4.21071 16.5858 4.58579C16.2107 4.96086 16 5.46957 16 6V12M18 24C16.9391 24 15.9217 23.5786 15.1716 22.8284C14.4214 22.0783 14 21.0609 14 20V12H26V20C26 21.0609 25.5786 22.0783 24.8284 22.8284C24.0783 23.5786 23.0609 24 22 24H18Z"
+                                    stroke="#3E989A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Современное оборудование и передовые технологии</span>
+                        </div>
+                    </div>
+                    <div class="bottom-mobile flex-box-column">
+                        <span>Современное оборудование и передовые технологии</span>
+                        <div class="bottom-mobile-svg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-pagination"></div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="screen-2 flex-box-row">
+                <div class="screen-2-text-but flex-box-column">
+                    <div class="screen-2-svg"></div>
+                    <div class="screen-2-text flex-box-column">
+                        <span>
+                            Добро пожаловать в сеть клиник
+                            <span class="blue-color">«Медицинские Технологии»</span>
+                        </span>
+                        <p>
+                            Медицинский центр "Medical Technologies" в Санкт-Петербурге
+                            предлагает широкий спектр высококачественных медицинских услуг.
+                            Мы используем передовые технологии и новейшее оборудование для
+                            точной диагностики и эффективного лечения. Наши опытные специалисты,
+                            обладающие многолетним опытом, обеспечивают индивидуальный подход к
+                            каждому пациенту.
+                        </p>
+                    </div>
+                    <div class="form-button">
+                        <span class="white-color">Узнать больше о клинике</span>
+                    </div>
+
+                </div>
+                <div class="screen-2-photo"></div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="screen-3 flex-box-column">
+                <span class="screen-3-question">Почему стоит к нам обратиться?</span>
+                <div class="advantages flex-box-column">
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Онлайн-запись и доступ к результатам</span>
+                        </div>
+                        <p class="advantage-right">
+                            Внедрили систему онлайн-записи, благодаря которой вы можете выбрать желаемое
+                            время приема и специалиста
+                        </p>
+                    </div>
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Предварительные консультации</span>
+                        </div>
+                        <p class="advantage-right">
+                            Первичное обследование, позволяющее врачу оценить
+                            состояние пациента и определить шаги лечения или
+                            диагностики
+                        </p>
+                    </div>
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Централизованная информационная система</span>
+                        </div>
+                        <p class="advantage-right">
+                            Единая платформа для хранения и управления всеми данными о пациентах,
+                            медицинских записях и административных процессах.
+                        </p>
+                    </div>
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Экспресс-диагностика</span>
+                        </div>
+                        <p class="advantage-right">
+                            Быстрое и эффективное обследование, позволяющее
+                            оперативно определить состояние здоровья пациента
+                        </p>
+                    </div>
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Оптимизированный маршрут пациентов</span>
+                        </div>
+                        <p class="advantage-right">
+                            Упорядоченный процесс перемещения пациентов между отделениями и специалистами
+                        </p>
+                    </div>
+                    <div class="advantage flex-box-row space-between">
+                        <div class="advantage-left flex-box-row">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 12L18 34L8 24" stroke="#2CBDC1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Горячая линия для пациентов</span>
+                        </div>
+                        <p class="advantage-right">
+                            Круглосуточная телефонная служба, предоставляющая
+                            консультации и оперативную поддержку по медицинским вопросам.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <h2>Записаться на прием</h2>
+            <form id="modal-form">
+                <div class="input-group">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше ФИО" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">
+                        Согласие на обработку персональных данных
+                        <a href="#" target="_blank">(Подробнее)</a>
+                    </label>
+                </div>
+                <button type="submit" class="submit-button">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
